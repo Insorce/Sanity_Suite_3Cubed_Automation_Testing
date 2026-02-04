@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Utilities.ExtendReports"/>
+</listeners>
+
+
+
+  <test thread-count="5" name="testng">
+    <classes>
+    
+    
+    <!--Tier0 Test cases -->
+    
+      <class name="Tier0.Brokenlinks_GeolocateWorkingHours_Page"/>
+      <class name="Tier0.Brokenlink_Inputmodel_Page"/>
+      <class name="Tier0.Brokenlink_Product_Page"/>
+      <class name="Tier0.Brokenlink_ProcessMap_Page"/>
+      <class name="Tier0.Brokenlink_Model_Insight_Page"/>
+      <class name="Tier0.Brokenlink_Systems_Applications_Page"/>
+      <class name="Tier0.Brokenlink_PeriodicActivities_Page"/>
+      <class name="Tier0.Brokenlink_DecisionTree_Page"/>
+      <class name="Tier0.Brokenlink_Volume_Page"/>
+      
+      
+       
+      <!--Tier1 Test cases -->
+          
+      <class name="Tier1.Page1_processmap_rejections"/>
+      <class name="Tier1.Page2_gelocate_working_hours"/>
+      <class name="Tier1.Page3_System_applications"/>
+      <class name="Tier1.Page4_products"/>
+      <class name="Tier1.Page5_periodic_activities"/>
+      <class name="Tier1.Page6_Volume"/>
+      
+    </classes>
+  </test> <!-- testng -->
+</suite> <!-- Suite -->
