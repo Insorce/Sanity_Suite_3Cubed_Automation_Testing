@@ -30,8 +30,8 @@ public class Baseclass {
         log = LogManager.getLogger(this.getClass());
 
         driver = new ChromeDriver();
-        //driver.get("https://pbl.3-cubed.com/");
-        driver.get("https://prod.3-cubed.com/");
+        driver.get("https://pbl.3-cubed.com/");
+       // driver.get("https://prod.3-cubed.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 

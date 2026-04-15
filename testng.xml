@@ -9,10 +9,28 @@
 
   <test thread-count="5" name="testng">
     <classes>
-    
-    
-    <!--Tier0 Test cases -->
-    
+    <class name="PBL_SANITY.Page1_ProcessMap_Rejections_PBL"/>
+    <class name="PBL_SANITY.Page2_gelocate_working_hours"/>
+     <class name="PBL_SANITY.Validation_System_and_application"/>
+       <class name="PBL_SANITY.Page3_System_applications"/>
+       <class name="PBL_SANITY.Validation_Products_PBL"/>
+     <class name="PBL_SANITY.Page4_products"/>
+     <class name="PBL_SANITY.Page5_periodic_activities"/>
+     <class name="PBL_SANITY.Page6_Volume"/>
+     <class name="PBL_SANITY.Page7_AHT"/>
+     <class name="PBL_SANITY.Page8_gelocate_team_size"/>
+     <class name="PBL_SANITY.Page9_Release_and_wait_type"/>
+     <class name="PBL_SANITY.Page10_Deadlines"/>
+     <class name="PBL_SANITY.Validation_Forms"/>
+     <class name="PBL_SANITY.Page11_forms"/>
+     <class name="PBL_SANITY.Validation_BusinessRules"/>
+     <class name="PBL_SANITY.Page12_business_rules"/>
+     <class name="PBL_SANITY.Page13_TeamSalary"/>
+     <class name="PBL_SANITY.Page14_OperationSites"/>
+     <class name="PBL_SANITY.Page15_NVA"/>
+     <class name="PBL_SANITY.Page16_Controls"/>
+   <!-- Tier0 Test cases 
+    <class name="PBL_SANITY.Project_creation_with_Visio_PDF_Zip_Json_files_In_PBL"/>
       <class name="Tier0.Brokenlinks_GeolocateWorkingHours_Page"/>
       <class name="Tier0.Brokenlink_Inputmodel_Page"/>
       <class name="Tier0.Brokenlink_Product_Page"/>
@@ -25,15 +43,15 @@
       
       
        
-      <!--Tier1 Test cases -->
+      Tier1 Test cases 
           
       <class name="Tier1.Page1_processmap_rejections"/>
       <class name="Tier1.Page2_gelocate_working_hours"/>
       <class name="Tier1.Page3_System_applications"/>
       <class name="Tier1.Page4_products"/>
       <class name="Tier1.Page5_periodic_activities"/>
-      <class name="Tier1.Page6_Volume"/>
+      <class name="Tier1.Page6_Volume"/>-->
       
     </classes>
-  </test> <!-- testng -->
+  </test>  
 </suite> <!-- Suite -->
