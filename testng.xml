@@ -5,8 +5,6 @@
 <listener class-name="Utilities.ExtendReports"/>
 </listeners>
 
-
-
   <test thread-count="5" name="testng">
     <classes>
   <class name="PBL_SANITY.Page1_ProcessMap_Rejections_PBL"/>
@@ -29,7 +27,9 @@
      <class name="PBL_SANITY.Page14_OperationSites"/>
      <class name="PBL_SANITY.Page15_NVA"/>
      <class name="PBL_SANITY.Page16_Controls"/>
+
    
     </classes>
+
   </test>  
 </suite> <!-- Suite -->
