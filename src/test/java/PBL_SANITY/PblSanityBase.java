@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public abstract class PblSanityBase {
@@ -31,19 +31,8 @@ public abstract class PblSanityBase {
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-          ChromeOptions options = new ChromeOptions();
-
-        // ✅ HEADLESS MODE
-        options.addArguments("--headless=new");
-
-        // ✅ Required for Jenkins (very important)
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-
-        // ✅ Optional but recommended
-        options.addArguments("--window-size=1920,1080");
-
-        driver = new ChromeDriver(options);
+          //ChromeOptions options = new ChromeOptions();
+        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
