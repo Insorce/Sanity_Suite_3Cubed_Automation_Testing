@@ -43,7 +43,9 @@ public class ExtendReports implements ITestListener {
 			// Set the Document title 
 			sparkreporter.config().setDocumentTitle("Automation Testing");
 			// Set the Report Title
-			sparkreporter.config().setReportName("Sanity Build Test");
+
+			sparkreporter.config().setReportName("Sanity Test");
+
 			// Set the document Theme 
 			sparkreporter.config().setTheme(Theme.DARK);
 			
@@ -55,11 +57,13 @@ public class ExtendReports implements ITestListener {
 			reports.attachReporter(sparkreporter);
 			// set the common info
 			
+
 			reports.setSystemInfo("Environment", "PBL");
 			reports.setSystemInfo("TesterName", "Mahesh_QA");
 			reports.setSystemInfo("OS", "windows");
 			reports.flush();
 			System.out.println("Extent report initialized at " + reportDirectory.getAbsolutePath());
+
 			
 			
 		  }

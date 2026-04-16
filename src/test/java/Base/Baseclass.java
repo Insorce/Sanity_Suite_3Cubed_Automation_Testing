@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.ResourceBundle;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,10 +28,21 @@ public class Baseclass {
     public void openURL() {
         rb = ResourceBundle.getBundle("config");
         log = LogManager.getLogger(this.getClass());
+          ChromeOptions options = new ChromeOptions();
 
-        driver = new ChromeDriver();
-        driver.get("https://pbl.3-cubed.com/");
-       // driver.get("https://prod.3-cubed.com/");
+        // ✅ HEADLESS MODE
+        options.addArguments("--headless=new");
+
+        // ✅ Required for Jenkins (very important)
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+
+        // ✅ Optional but recommended
+        options.addArguments("--window-size=1920,1080");
+
+        driver = new ChromeDriver(options);
+       // driver.get("https://pbl.3-cubed.com/");
+       driver.get("https://prod.3-cubed.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
