@@ -5,8 +5,6 @@
 <listener class-name="Utilities.ExtendReports"/>
 </listeners>
 
-
-
   <test thread-count="5" name="testng">
     <classes>
     <class name="PBL_SANITY.Page1_ProcessMap_Rejections_PBL"/>
@@ -29,29 +27,6 @@
      <class name="PBL_SANITY.Page14_OperationSites"/>
      <class name="PBL_SANITY.Page15_NVA"/>
      <class name="PBL_SANITY.Page16_Controls"/>
-   <!-- Tier0 Test cases 
-    <class name="PBL_SANITY.Project_creation_with_Visio_PDF_Zip_Json_files_In_PBL"/>
-      <class name="Tier0.Brokenlinks_GeolocateWorkingHours_Page"/>
-      <class name="Tier0.Brokenlink_Inputmodel_Page"/>
-      <class name="Tier0.Brokenlink_Product_Page"/>
-      <class name="Tier0.Brokenlink_ProcessMap_Page"/>
-      <class name="Tier0.Brokenlink_Model_Insight_Page"/>
-      <class name="Tier0.Brokenlink_Systems_Applications_Page"/>
-      <class name="Tier0.Brokenlink_PeriodicActivities_Page"/>
-      <class name="Tier0.Brokenlink_DecisionTree_Page"/>
-      <class name="Tier0.Brokenlink_Volume_Page"/>
-      
-      
-       
-      Tier1 Test cases 
-          
-      <class name="Tier1.Page1_processmap_rejections"/>
-      <class name="Tier1.Page2_gelocate_working_hours"/>
-      <class name="Tier1.Page3_System_applications"/>
-      <class name="Tier1.Page4_products"/>
-      <class name="Tier1.Page5_periodic_activities"/>
-      <class name="Tier1.Page6_Volume"/>-->
-      
-    </classes>
+      </classes>
   </test>  
 </suite> <!-- Suite -->
