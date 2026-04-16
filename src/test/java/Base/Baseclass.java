@@ -28,13 +28,8 @@ public class Baseclass {
     public void openURL() {
         rb = ResourceBundle.getBundle("config");
         log = LogManager.getLogger(this.getClass());
-        
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--headless=new");
-
-        driver = new ChromeDriver(options);
+                
+        driver = new ChromeDriver();
        // driver.get("https://pbl.3-cubed.com/");
        driver.get("https://prod.3-cubed.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
