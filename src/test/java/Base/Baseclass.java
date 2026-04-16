@@ -44,7 +44,7 @@ public class Baseclass {
     }
 
     // TAKE SCREENSHOT
-    public String screenshot(String tname) throws IOException {
+    public static String screenshot(String tname) throws IOException {
 
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
