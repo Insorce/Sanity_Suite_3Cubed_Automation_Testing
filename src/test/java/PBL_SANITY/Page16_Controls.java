@@ -183,7 +183,7 @@ public class Page16_Controls extends PblSanityBase
 	    	pauseSeconds(3);
 	    	
 	    	//click on the modelinsght link in the decision tree page
-	    	jsClick(By.xpath("//a[@href='/Validation/Controls?screen=modalval']"));
+	    	jsClick(By.xpath("//a[@href='/Validation/ModelInsight']"));
 	    	pauseSeconds(4);
 	    	// click on diagnose button in the model insight page
 	    	jsClick(By.xpath("//a[text()='Diagnostic Summary']"));
